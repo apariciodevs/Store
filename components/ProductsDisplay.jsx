@@ -5,37 +5,55 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline'
 const staticProducts = [
   {
     id: 1,
-    name: "Sand Slides",
+    name: "Air Jordan I High G",
     href: "#",
     price: "$220",
-    imageSrc: "/sand.png",
+    imageSrc: "/shoes/airHigh.webp",
     imageAlt:
     "Sand brown shoe."
   },
   {
     id: 2,
-    name: "Bone Slides",
+    name: "Jordan Delta 3 Mid",
     href: "#",
     price: "$220",
-    imageSrc: "/bone.png",
+    imageSrc: "/shoes/Delta.webp",
     imageAlt:
       "Cream white shoe.",
   },
   {
     id: 3,
-    name: "Orange Slides",
+    name: "Air Jordan 6 Retro",
     href: "#",
     price: "$180",
-    imageSrc: "/orange.png",
+    imageSrc: "/shoes/jordanRetro.webp",
     imageAlt:
       "Orange Shoe.",
   },
   {
     id: 4,
-    name: "Green Slides",
+    name: "Air Jordan I Low G NRG",
     href: "#",
     price: "$200",
-    imageSrc: "green.png",
+    imageSrc: "/shoes/low.webp",
+    imageAlt:
+    "Lime green Shoe."
+  },
+  {
+    id: 5,
+    name: "Air Jordan I Low Pandas",
+    href: "#",
+    price: "$200",
+    imageSrc: "/shoes/pandas.webp",
+    imageAlt:
+    "Lime green Shoe."
+  },
+  {
+    id: 6,
+    name: "Air Force 1 07'",
+    href: "#",
+    price: "$200",
+    imageSrc: "/shoes/airForce.webp",
     imageAlt:
     "Lime green Shoe."
   },
@@ -44,10 +62,10 @@ const staticProducts = [
 
 const ProductsDisplay = () => {
   return (
-    <div  className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div  className="px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
 
       <div className="flex items-center h-12 space-x-2">
-      <h2 className="font-medium tracking-wide "> <span className="font-semibold tracking-tighter">Yeezy Slides</span> collection</h2>
+      <h2 className="font-medium tracking-wide "> <span className="font-semibold tracking-tighter">Latest Drop</span> collection</h2>
       <ChevronRightIcon className="w-4 h-4 text-gray-900 "/>
 
     </div>

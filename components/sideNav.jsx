@@ -1,52 +1,62 @@
-import { ChevronRightIcon } from '@heroicons/react/24/outline'
-
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
+import Link from "next/link";
+import { RiMenu4Fill } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
 
 const SideNav = () => {
-    return ( <aside id='sideNav' className="absolute right-0 z-10 w-64" aria-label="Sidebar">
-    <div className="h-[90vh] px-3 py-8 overflow-y-auto rounded bg-gray-50">
-       <ul className="space-y-2">
-          <li>
-             <a href="#" className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
-                <span className="ml-3 font-semibold">New and Featured</span>
-                <ChevronRightIcon className="w-5 text-gray-900 "/>
+  const [nav, setNav] = useState(false);
 
-             </a>
-          </li>
-          <li>
-             <a href="#" className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200 s">
-                <span className="ml-3 font-semibold">Men</span>
-                <ChevronRightIcon className="w-5 text-gray-900 "/>
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-             </a>
-          </li>
-          <li>
-             <a href="#" className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200 s">
-                <span className="ml-3 font-semibold">Women</span>
-                <ChevronRightIcon className="w-5 text-gray-900 "/>
+  return (
+    <aside
+      id="sideNav"
+      aria-label="Sidebar"
+      className={
+         nav
+           ? "  absolute right-0 z-10 w-64  sm:hidden"
+           : " absolute right-0 z-10 w-64  hidden"
+       }
+    >
+      <div className="h-[100vh] mt-20 px-3 py-8 overflow-y-auto rounded bg-gray-50">
+        <nav className="space-y-2">
+          <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
+            <Link href="#" className="ml-3 font-semibold">
+              New & Featured
+            </Link>
+            <ChevronRightIcon className="w-5 text-gray-900 " />
+          </div>
+          <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
+            <Link href="#" className="ml-3 font-semibold">
+              Men
+            </Link>
+            <ChevronRightIcon className="w-5 text-gray-900 " />
+          </div>
+          <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
+            <Link href="#" className="ml-3 font-semibold">
+              Women
+            </Link>
+            <ChevronRightIcon className="w-5 text-gray-900 " />
+          </div>
+          <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
+            <Link href="#" className="ml-3 font-semibold">
+              Kids
+            </Link>
+            <ChevronRightIcon className="w-5 text-gray-900 " />
+          </div>
+          <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
+            <Link href="#" className="ml-3 font-semibold">
+              Sale
+            </Link>
+            <ChevronRightIcon className="w-5 text-gray-900 " />
+          </div>
+        </nav>
+      </div>
+    </aside>
+  );
+};
 
-             </a>
-          </li>
-          <li>
-             <a href="#" className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200 s">
-                <span className="ml-3 font-semibold">Kids</span>
-                <ChevronRightIcon className="w-5 text-gray-900 "/>
-
-             </a>
-          </li>
-          <li>
-             <a href="#" className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200 s">
-                <span className="ml-3 font-semibold">Sale</span>
-                <ChevronRightIcon className="w-5 text-gray-900 "/>
-
-             </a>
-          </li>
- 
-         
-          
-      
-       </ul>
-    </div>
- </aside> );
-}
- 
 export default SideNav;
