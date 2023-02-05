@@ -11,7 +11,6 @@ import SideNav from "@/components/sideNav";
 
 import Homee from "./Home";
 
-import { strorefront } from "../utils";
 
 export default function Index({ products }) {
   console.log({ products });
