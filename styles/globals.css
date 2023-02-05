@@ -20,12 +20,3 @@ body {
   overflow-x:hidden
 }
 
-
-.bgImg {
-  background-image: url("../public/bannerBlue.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-
-}
