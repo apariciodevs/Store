@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner";
-import Hero from "@/components/Hero";
+import NewHero from "@/components/NewHero";
 import ProductsDisplay from "@/components/ProductsDisplay";
 
 
@@ -7,8 +7,7 @@ import ProductsDisplay from "@/components/ProductsDisplay";
 export default function Homee() {
     return(
         <>
-        <Banner/>
-        <Hero/>
+        <NewHero/>
         <ProductsDisplay/>
         </>
     )

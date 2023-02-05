@@ -21,9 +21,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <SideNav />
-      <div className="flex items-center justify-between w-11/12 h-20 mx-auto">
-        <nav className="">
+
+      <div className="flex items-center justify-between w-11/12 h-20 mx-auto ">
+        <nav>
           <Link href={"/Home"}>
             <h1 className="text-xl font-extrabold tracking-tighter text-gray-800">
               Sneakerstore
@@ -44,7 +44,7 @@ const Navbar = () => {
             <Link href={"/Cart"}>
               <ShoppingBagIcon className="w-6 text-gray-900 cursor-pointer" />
             </Link>
-            <div onClick={handleNav} className="cursor-pointer sm:hidden">
+            <div onClick={handleNav} className="cursor-pointer sm:hidden ">
               {nav ? <AiOutlineClose  size={25} /> : <RiMenu4Fill size={25} />}
             </div>
           </span>
@@ -53,17 +53,20 @@ const Navbar = () => {
       <div className="hidden">
         <SideNav id="sideNav" />
       </div>
+
+
+
       {/* mobile nav*/}
       <aside
       id="sideNav"
       aria-label="Sidebar"
       className={
          nav
-           ? "  absolute right-0 z-10 w-64  sm:hidden"
+           ? "  absolute right-0 z-10 w-64  sm:hidden "
            : " absolute right-0 z-10 w-64  hidden"
        }
     >
-      <div className="h-[100vh] mt-0 px-3 py-8 overflow-y-auto rounded bg-gray-50">
+      <div className="h-[100vh] mt-0 px-3 py-8 overflow-y-auto rounded bg-gray-50 ">
         <nav className="space-y-2">
           <div className="flex items-center justify-between p-2 text-lg font-normal text-gray-900 rounded-lg hover:bg-gray-200">
             <Link href="#" className="ml-3 font-semibold">
