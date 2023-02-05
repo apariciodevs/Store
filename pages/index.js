@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import ProductsDisplay from "@/components/ProductsDisplay";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
