@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const horizontalImageSrc = [
   {
+    id: 1,
     src: "/horizontal/first.webp",
     heading: "Trending now",
     title: "Lighten up",
@@ -12,6 +13,7 @@ const horizontalImageSrc = [
 
 const verticalImageSrc = [
   {
+    id: 1,
     src: "/vertical/first.webp",
     heading: "Trending now",
     title: "Lighten up",
@@ -19,6 +21,7 @@ const verticalImageSrc = [
     button: "Shop",
   },
   {
+    id: 2,
     src: "/vertical/second.webp",
     heading: "Jordan Women",
     title: "brooklyn fleece",
@@ -33,7 +36,7 @@ const ImageResize = (image) => {
     <>
       <div className="flex flex-col gap-y-20">
         {horizontalImageSrc.map((image) => (
-          <div className="hidden sm:block">
+          <div key={image.id} className="hidden sm:block">
             <h1 className="mb-6 text-2xl font-semibold uppercase ">
               {image.heading}
             </h1>
@@ -53,7 +56,7 @@ const ImageResize = (image) => {
           </div>
         ))}
         {verticalImageSrc.map((image) => (
-          <div className="sm:hidden">
+          <div key={image.id} className="sm:hidden">
             <h1 className="mb-4 text-2xl font-semibold uppercase ">
               {image.heading}
             </h1>
