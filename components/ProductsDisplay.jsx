@@ -9,8 +9,7 @@ const staticProducts = [
     href: "#",
     price: "$220",
     imageSrc: "/shoes/airHigh.webp",
-    imageAlt:
-    "Air Jordan I High G."
+    imageAlt: "Air Jordan I High G."
   },
   {
     id: 2,
@@ -18,8 +17,7 @@ const staticProducts = [
     href: "#",
     price: "$220",
     imageSrc: "/shoes/Delta.webp",
-    imageAlt:
-      "Jordan Delta 3 Midshoe.",
+    imageAlt: "Jordan Delta 3 Midshoe.",
   },
   {
     id: 3,
@@ -27,8 +25,7 @@ const staticProducts = [
     href: "#",
     price: "$180",
     imageSrc: "/shoes/jordanRetro.webp",
-    imageAlt:
-      "Air Jordan 6 .",
+    imageAlt: "Air Jordan 6 .",
   },
   {
     id: 4,
@@ -36,8 +33,7 @@ const staticProducts = [
     href: "#",
     price: "$200",
     imageSrc: "/shoes/low.webp",
-    imageAlt:
-    "Air Jordan I Low G NRG."
+    imageAlt: "Air Jordan I Low G NRG."
   },
   {
     id: 5,
@@ -45,8 +41,7 @@ const staticProducts = [
     href: "#",
     price: "$200",
     imageSrc: "/shoes/pandas.webp",
-    imageAlt:
-    "Air Jordan I Low Pandas."
+    imageAlt: "Air Jordan I Low Pandas."
   },
   {
     id: 6,
@@ -54,8 +49,7 @@ const staticProducts = [
     href: "#",
     price: "$200",
     imageSrc: "/shoes/airForce.webp",
-    imageAlt:
-    "Air force 1 07."
+    imageAlt: "Air force 1 07."
   },
   // More products...
 ];
