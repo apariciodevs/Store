@@ -2,11 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import Navbar from "@/components/Navbar";
-import ProductsDisplay from "@/components/ProductsDisplay";
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import SideNav from "@/components/sideNav";
 
 import Homee from "./Home";
 
