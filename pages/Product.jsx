@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { AiOutlineHeart } from "react-icons/ai";
+
 const staticProducts = [
   {
     id: 1,
@@ -17,12 +19,12 @@ const staticProducts = [
 
 export default function Product() {
   return (
-    <div className="flex flex-col h-[2000px]">
+    <div className="flex flex-col items-center min-h-screen md:flex-row">
       <div>
         {staticProducts.map((product) => (
           <div key={product.id} className="mt-12">
-            <div className="px-6">
-              <h1 className="text-2xl font-medium">{product.name}</h1>
+            <div className="px-6 md:hidden">
+              <h1 className="text-2xl font-medium ">{product.name}</h1>
               <p className="mt-2 text-base">{product.description}</p>
               <h2 className="mt-4 text-lg font-medium">{product.price}</h2>
             </div>
@@ -39,7 +41,14 @@ export default function Product() {
 
       {/* -------------------sizing---------------------*/}
 
-      <section className="mt-14">
+      <section className=" sm:p-10 mt-14 sm:mt-0">
+        {staticProducts.map((product) => (
+          <div className="px-6 mb-4">
+            <h1 className="text-2xl font-medium ">{product.name}</h1>
+            <p className="mt-2 text-base">{product.description}</p>
+            <h2 className="mt-4 text-lg font-medium">{product.price}</h2>
+          </div>
+        ))}
         <div className="flex justify-between px-12 text-gray-700 text-md">
           <h1>Select size</h1>
           <h1>Size guide</h1>
@@ -85,12 +94,16 @@ export default function Product() {
             EU 48
           </div>
         </div>
+        {/*----------------Buttons------------------*/}
+        <div className="flex flex-col items-center pb-16 mt-4 gap-y-4">
+          <button className="py-5 rounded-full px-44 bg-neutral-900 text-gray-50 hover:bg-neutral-900/70">
+            Add to bag
+          </button>
+          <button className="py-5 border-[1.6px] rounded-full flex items-center gap-x-3 border-neutral-400 px-44 hover:border-neutral-800 ">
+            Favorite <AiOutlineHeart />
+          </button>
+        </div>
       </section>
-      {/*----------------Buttons------------------*/}
-      <div className="flex flex-col items-center mt-4 gap-y-4">
-        <button className="px-48 py-5 rounded-full bg-neutral-900 text-gray-50 hover:bg-neutral-900/70">Add to bag</button>
-        <button className="py-5 border-[1.6px] rounded-full border-neutral-400 px-48 ">Favorite</button>
-      </div>
     </div>
   );
 }
