@@ -28,7 +28,7 @@ export default function Product() {
               <p className="mt-2 text-base">{product.description}</p>
               <h2 className="mt-4 text-lg font-medium">{product.price}</h2>
             </div>
-            <img
+            <Image
               src={product.imageSrc}
               alt={product.imageAlt}
               width={800}
@@ -43,7 +43,7 @@ export default function Product() {
 
       <section className=" sm:p-10 mt-14 sm:mt-0">
         {staticProducts.map((product) => (
-          <div className="px-6 mb-4">
+          <div key={product.id} className="px-6 mb-4">
             <h1 className="text-2xl font-medium ">{product.name}</h1>
             <p className="mt-2 text-base">{product.description}</p>
             <h2 className="mt-4 text-lg font-medium">{product.price}</h2>
