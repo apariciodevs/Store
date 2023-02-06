@@ -48,7 +48,7 @@ const staticProducts = [
     name: "Air Force 1 07'",
     href: "#",
     price: "$200",
-    imageSrc: "/shoes/airForce.webp",
+    imageSrc: "/shoes/Delta.webp",
     imageAlt: "Air force 1 07."
   },
   // More products...
