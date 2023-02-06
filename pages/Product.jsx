@@ -20,7 +20,7 @@ export default function Product() {
     <div className="flex flex-col h-[2000px]">
       <div>
         {staticProducts.map((product) => (
-          <div className="mt-12">
+          <div key={product.id} className="mt-12">
             <div className="px-6">
               <h1 className="text-2xl font-medium">{product.name}</h1>
               <p className="mt-2 text-base">{product.description}</p>
